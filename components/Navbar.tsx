@@ -1,6 +1,6 @@
-import { PackageX } from 'lucide-react'
 import Image from 'next/image'
 import Link from 'next/link'
+import { SignInButton, SignedIn, SignedOut, UserButton } from '@clerk/nextjs'
 import MobileNav from './MobileNav'
 
 const Navbar = () => {
@@ -20,7 +20,9 @@ const Navbar = () => {
       </Link>
 
       <div className='flex-between gap-5'>
-        {/* user managment */}
+        <SignedIn>
+          <UserButton />
+        </SignedIn>
         <MobileNav />
       </div>
     </nav>
