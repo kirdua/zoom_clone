@@ -1,5 +1,5 @@
 import { format } from 'date-fns'
 
 export const setCurrentDate = () => {
-  return format(new Date(), 'eeee, mm/dd/yyyy')
+  return format(new Date(), 'eeee, MMMM dd, yyyy')
 }
