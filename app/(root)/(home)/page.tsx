@@ -1,7 +1,8 @@
 'use client'
 import { useState, useEffect } from 'react'
 import { format } from 'date-fns'
-import { setCurrentDate } from '../../../utils/dateFormat'
+import { setCurrentDate } from '@/utils/dateFormat'
+import MeetingTypeList from '@/components/MeetingTypeList'
 
 const Home = () => {
   const [time, setTime] = useState(new Date())
@@ -36,6 +37,8 @@ const Home = () => {
           </div>
         </div>
       </div>
+
+      <MeetingTypeList />
     </section>
   )
 }
